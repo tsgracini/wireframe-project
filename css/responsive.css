@@ -2,6 +2,14 @@
   .s-hero .text {
     max-width: 49%;
   }
+
+  .s-card-featured .all-cards {
+    width: 100%;
+  }
+
+  .s-card-featured .all-cards .card {
+    width: 32%;
+  }
 }
 
 
@@ -32,6 +40,26 @@
     text-align: center;
   }
 
+  .s-card-featured .all-cards {
+    flex-direction: column;
+  }
+
+  .s-card-featured .all-cards .card {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .s-card-featured .all-cards .card:last-child {
+    margin-bottom: 0px;
+  }
+
+  .s-card-featured .all-cards .card .info {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
 }
 
 @media(max-width: 768px) {
@@ -66,5 +94,18 @@
 
   h1 {
     font-size: 4.2rem;
+  }
+
+  .s-card-featured {
+    padding: 4rem 0;
+  }
+
+  .s-card-featured .title p {
+    text-align: center;
+    max-width: 80%;
+  }
+
+  .s-card-featured .main-area {
+    padding-bottom: 4rem;
   }
 }
